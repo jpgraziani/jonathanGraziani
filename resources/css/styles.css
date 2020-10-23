@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,700&display=swap');
+@import url("https://use.typekit.net/ewr2end.css");
+
+/* Global Styles */
+:root {
+    --background: #ffffff;
+    --black: #000000;
+    --bkgMediumGray: #cccccc;
+    --bkgLightGray: #eeeeee;
+    --bodyCopyGray: #757575;
+    --titleBlack: #333333;   
+}
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    }
+
+body {
+    font-family: sans-serif;
+    background-color: var(--bkgLightGray);
+}
+
+img {
+    width: 100%;
+}
+
+.rounded {
+    width: 15%;
+    border-radius: 50%;
+}
+
+h1, h2 {
+    font-family: 'Lora', serif;
+    margin: 1rem 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+h3 {
+    margin: 1rem 0;
+}
+
+p {
+    font-family: "europa", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6em;
+    letter-spacing: .04em;
+}
+
+ul {
+    margin: 0 1rem;
+    margin-bottom: 1rem;
+}
+
+ol {
+    margin: 1rem;
+}
+
+/* End of Global Styles */
+
+/* Header */
+
+header {
+    background-color: var(--background);
+    padding: 1rem 0;
+}
+
+header p {
+    text-align: center;
+}
+
+
+/* End of Header */
+
+/* Main */
+#home {
+    background-color: var(--black);
+}
+
+#home, #about, #contact {
+    padding: 3rem 0;
+}
+
+#home p {
+    font-size: 2rem;
+    line-height: 1.35em;
+    letter-spacing: .01em;
+    color: var(--bkgLightGray);
+
+}
+
+
+/* End of Main */
+
+/* Groups & Items (mobil first) */
+
+.wrapper {
+    width: 100%;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+}
+
+.item {
+    flex: 1;
+    
+    /* margin: .75rem; */
+    /* background-color: aqua; */
+}
+
+.item-double {
+    flex: 2;
+    /* margin: .75rem; */
+    /* background-color: aquamarine; */
+}
+
+/* End of Groups & Items (mobil first) */
+
