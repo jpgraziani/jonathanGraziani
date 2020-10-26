@@ -9,67 +9,132 @@
 </head>
 <body>
 
-  <header> <!--header-->
-		<div class="group">
+	<header> <!--header-->
+		<div class="group-title">
 			<h1>Jonathan Graziani</h1>
-			<p>software engineer</p>
+			<p>tucson, az — frontend developer</p>
 		</div>
+
+		<nav>
+			<ul id="menu">
+				<li><a href="#home">home</a></li>
+				<li><a href="#about">about</a></li>
+				<li><a href="#projects">projects</a></li>
+				<li><a href="#contact">contact</a></li>
+			</ul>
+		</nav>
   </header> <!--end of header-->
 
-  <main> <!--home-->
-    <div class="wrapper">
-			<div id="home">
-				<div class="group">
-					<div class="item">
-						<p>Nice to meet you! I have a love for biomimicry, the beautiful forms of Architecture, and most importantly, the wonderful people around me. I am continually utilizing my extensive knowledge of design to create intuitive software experiences.</p>
+	<main> <!--home-->
+		
+			<div class="wrapper">
+				<div id="home">
+					<div class="group">
+						<div class="item">
+							<p>Nice to meet you! I have a love for biomimicry, the beautiful forms of Architecture, and most importantly, the wonderful people around me. I am continually utilizing my extensive knowledge of design to create intuitive software experiences.</p>
+							</div>
 					</div>
 				</div>
-			</div>
-		</div> <!--end of home-->
-		
+			</div><!--end of home-->
+     
 		<article id="about"><!--about-->
-			<div class="wrapper">
-				<div class="group">
-					<h2>My Story</h2>
-					<div class="item-double">
-						<p>After graduating from the Academy of Art in San Francisco, I found myself in NYC building brands for over 8 years. While helping build brands, I always found myself really enjoying when we got to extend the brands into the digital space. From here, my passion for front-end development blossomed.</p> <br>
+				<div class="group-about">
+					<h2>About</h2>
+					<div class="item-about">
+						<p>After graduating from the Academy of Art in San Francisco, I found myself in NYC building brands for over 8 years. While helping build brands, I always found myself really enjoying when we got to extend the brands into the digital space. From here, my passion for front-end development blossomed.</p>
+					</div>
+					<div class="item-about">
 						<p>When I am not working, you can find me making lamps, learning about furniture design, and thinking about my next travel destination with my family.</p>
+					</div>
+					
+					<div class="item-about">
+						<img src="./resources/images/jonathan_bio_shot.jpg" alt="jonathan-graziani" class="rounded">
+					</div>
 
-						<h3>tech stack</h3>
-						<ul>
+					<div class="item-about">
+						<h3 class="tech">Tech Stack</h3>
+						<hr>
+						<ol class="techStack-links">
 							<li>HTML5</li>
 							<li>CSS3</li>
 							<li>JavaScript</li>
+							<li>React.js</li>
 							<li>Node.js</li>
-							<li>react.js</li>
-						</ul>
-					</div>
-
-					<div class="item">
-						<img src="./resources/images/jonathan_bio_shot.jpg" alt="jonathan-graziani" class="rounded">
+							<li>MongoDB</li>
+						</ol>
 					</div>
 				</div>
-			</div>
 		</article><!--end of about-->
 
-		<hr><!--horizontal rule-->
+		<article id="projects"><!--projects-->
+			<div class="group-projects">
+				<h2>Projects</h2>
+				<div class="item-projects"><!--cofffe project-->
+					<div class="card">
+						<p class="stack-text">REACT.JS</p>
+						<h3>Loyal Coffee House</h3>
+						<p class="card-text">I created an e-commerce site with react. I integrated authorization with Node.js.</p>
+						<ul class="ul-project-links">
+							<li><a href="#" target="_blank" class="live-site-link">GitHub</a></li>
+							<li><a href="#" target="_blank" class="live-site-link">Live Site</a></li>
+						</ul>
+					</div>
+				</div><!--end of cofffe project-->
+
+				<div class="item-projects"><!--blockchain project-->
+					<div class="card">
+						<p class="stack-text">javascript</p>
+						<h3>Blockchain</h3>
+						<p class="card-text">Created my very own Blockchain and decentralized network. Integrated NASA API for security.</p>
+						<ul class="ul-project-links">
+							<li><a href="#" target="_blank" class="live-site-link">GitHub</a></li>
+							<li><a href="#" target="_blank" class="live-site-link">Live Site</a></li>
+						</ul>
+					</div>
+				</div><!--end of blockchain project-->	
+
+				<div class="item-projects"><!--recipe rolodex project-->
+					<div class="card">
+						<p class="stack-text">reac.js | contentful</p>
+						<h3>Recipe Rolodex</h3>
+						<p class="card-text">Created my very own food recipe blog with contenful backend integration.</p>
+						<ul class="ul-project-links">
+							<li><a href="#" target="_blank" class="live-site-link">GitHub</a></li>
+							<li><a href="#" target="_blank" class="live-site-link">Live Site</a></li>
+						</ul>
+					</div>
+				</div><!--end of recipe rolodex project-->
+
+				<div class="item-projects"><!--biomimicry app project-->
+					<div class="card">
+						<p class="stack-text">reac.js | MongoDB</p>
+						<h3>Biomimicry App</h3>
+						<p class="card-text">Created a wiki clone for all new biomimicry projects coming to life. Created a database with MongoDB.</p>
+						<ul class="ul-project-links">
+							<li><a href="#" target="_blank" class="live-site-link">GitHub</a></li>
+							<li><a href="#" target="_blank" class="live-site-link">Live Site</a></li>
+						</ul>
+					</div>
+				</div><!--end of biomimicry app project-->
+			</div>
+		</article><!--end of projects-->
 
 		<article id="contact"><!--contact-->
-			<div class="group">
+			<div class="group-contact">
 				<h2>Work With Me</h2>
-				<div class="item">
+				<div class="item-contact">
 					<p>If my work inspires you, don't hesitate to contact me, as I love talking and building cool things.</p>
 				</div>
 
-				<div class="item">
-					<ol>
+				<div class="item-contact">
+					<ol class="work-links">
 						<li><a href="https://github.com/jpgraziani/jonathangraziani" target="_blank">github</a></li>
 						<li><a href="https://www.linkedin.com/in/jonathan-graziani-16406714/" target="_blank">LinkedIn</a></li>
 					</ol>
 				</div>
 
-				<div class="item">
-					<p>415.244.5326</p>
+				<div class="item-contact">
+					<a href="tel:415.244.5326">415.244.5326</a><br>
           <a href="mailto:jpgraziani@gmail.com">say hi!</a>
 				</div>
 			</div>
@@ -79,6 +144,7 @@
 	<footer> <!--footer-->
 		<div class="group">
 			<div class="item">
+				<hr><!--horizontal rule-->
 				<p>© jonathan graziani | made with <span class="heart-icon">&#128420;</span></p>
 			</div>
 		</div>
