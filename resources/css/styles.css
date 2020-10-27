@@ -77,6 +77,14 @@ a:visited, a:active {
   color: var(--titleBlack);
 }
 
+button {
+  padding: 1rem 1.5rem;
+  border: 3px solid white;
+  background-color: var(--black);
+  color: var(--bkgLightGray);
+}
+
+
 /* ------------------------------------- */
 /* End of Global Styles */
 /* ------------------------------------- */
@@ -129,7 +137,7 @@ header nav ul li:last-child a {
   background-color: var(--black);
 }
 
-#home, #about, #projects, #contact {
+#home, #about, #projects, #contact, #message {
   padding: 3rem 0;
 }
 
@@ -219,13 +227,22 @@ header nav ul li:last-child a {
 }
 
 /* ------------------------------------- */
-/* End of Porjects */
-/* ------------------------------------- */
-
-/* ------------------------------------- */
 /* Contact */
 /* ------------------------------------- */
+#message {
+  background-color: var(--black);
+  color: var(--bkgLightGray);
+}
 
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
 /* ------------------------------------- */
 /* End of Contact */
 /* ------------------------------------- */
@@ -235,6 +252,10 @@ header nav ul li:last-child a {
 /* ------------------------------------- */
 footer {
   text-align: center;
+}
+
+footer p {
+  padding-bottom: 1rem;
 }
 
 footer hr {
@@ -251,7 +272,7 @@ footer hr {
   width: 100vw;
 }
 
-.group, .group-projects, .group-about, .group-contact {
+.group, .group-projects, .group-about, .group-contact, .group-form {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -285,7 +306,7 @@ footer hr {
     max-width: 800px;
   }
 
-  #about .group-about, #projects .group-projects, #contact .group-contact {
+  #about .group-about, #projects .group-projects, #contact .group-contact, #message .group-form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -298,7 +319,11 @@ footer hr {
     
   }
 
-  .group-about h2, .group-projects h2, .group-contact h2 {
+  /* #message .group-form {
+    justify-content: center;
+  } */
+
+  .group-about h2, .group-projects h2, .group-contact h2, .group-form h2 {
     width: 100%;
   }
 
