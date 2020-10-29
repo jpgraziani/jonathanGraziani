@@ -149,7 +149,7 @@ header nav ul li:last-child a {
 }
 
 /* ------------------------------------- */
-/* End of Main */
+/* End of Home */
 /* ------------------------------------- */
 
 /* ------------------------------------- */
@@ -190,7 +190,8 @@ header nav ul li:last-child a {
   background-color: var(--card);
   margin: .75rem 0;
   padding: 2rem;
-  min-height: 265px;
+  min-height: 300px;
+  max-height: 450px;
   max-width: 520px;
   display: flex;
   flex-direction: column;
@@ -225,6 +226,10 @@ header nav ul li:last-child a {
 .live-site-link:link, .live-site-link:hover, .live-site-link:visited, .live-site-link:active {
   color: var(--bkgLightGray);
 }
+
+/* ------------------------------------- */
+/* End of Projects */
+/* ------------------------------------- */
 
 /* ------------------------------------- */
 /* Contact */
@@ -318,10 +323,6 @@ footer hr {
     justify-content: flex-start;
     
   }
-
-  /* #message .group-form {
-    justify-content: center;
-  } */
 
   .group-about h2, .group-projects h2, .group-contact h2, .group-form h2 {
     width: 100%;
